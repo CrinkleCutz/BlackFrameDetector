@@ -7,7 +7,8 @@ A macOS application for detecting black or near-black frames in video files.
 - Detect black frames in video files with adjustable sensitivity
 - **Multi-file batch processing** -- add multiple files or entire folders at once
 - **Drag-and-drop** -- drop files or folders onto the window to add them
-- Support for common video formats (MP4, MOV, MKV, M4V, AVI, MTS, M2TS)
+- **Per-file status lines** -- see results for each file as it completes, right below the progress bar
+- Support for common video formats (MP4, MOV, MKV, M4V, AVI, MTS, M2TS, WEBM, WMV, FLV, TS, VOB, MPG, MPEG)
 - Support for popular codecs (H.264, H.265/HEVC, ProRes, DNxHD)
 - Works with SD, HD (720p/1080p), and UHD (4K) resolutions
 - Real-time progress with ETA countdown showing current file and queue position
@@ -17,14 +18,17 @@ A macOS application for detecting black or near-black frames in video files.
 
 ## Installation
 
-### From DMG (Recommended)
+### From GitHub Releases (Recommended)
 
-1. Download `BlackFrameDetector-1.0.0-arm64.dmg`
-2. Double-click to mount
-3. Drag "Black Frame Detector" to Applications
-4. **First launch**: Right-click the app → "Open" → Click "Open" in the dialog
+1. Go to the [Releases](../../releases) page
+2. Download the `.dmg` file for your architecture (ARM64 for Apple Silicon, x86_64 for Intel)
+3. Double-click the DMG to mount it
+4. Drag "Black Frame Detector" to Applications
+5. **First launch**: Right-click the app → "Open" → Click "Open" in the dialog
 
 After the first launch, the app will open normally.
+
+> If no release is available yet, see [Building from Source](#building-from-source) below.
 
 ### Requirements
 
@@ -44,8 +48,9 @@ After the first launch, the app will open normally.
    - **Pixel Blackness**: Lower = more lenient (default: 98%)
    - **Min Run Length**: Minimum consecutive frames to report as a range
 3. Click **Start Analysis** -- files are processed sequentially with progress shown as `[1/N]`
-4. View results in the Frames or Ranges tab (each row shows which file it belongs to)
-5. Export results using the CSV/JSON buttons (exports include a "file" column)
+4. Watch per-file results appear below the progress bar as each file completes
+5. View detailed results in the Frames or Ranges tab (each row shows which file it belongs to)
+6. Export results using the CSV/JSON buttons (exports include a "file" column)
 
 ### Detection Modes
 
@@ -78,7 +83,7 @@ chmod +x build.sh package_dmg.sh
 ```
 
 The built app will be at `dist/Black Frame Detector.app`
-The DMG will be at `dist/BlackFrameDetector-1.0.0-arm64.dmg`
+The DMG will be at `dist/BlackFrameDetector-3.0.0-arm64.dmg`
 
 ### Build Steps (Intel)
 
@@ -95,7 +100,7 @@ chmod +x build-intel.sh package_dmg-intel.sh
 ./package_dmg-intel.sh
 ```
 
-The Intel DMG will be at `dist/BlackFrameDetector-1.0.0-x86_64.dmg`
+The Intel DMG will be at `dist/BlackFrameDetector-3.0.0-x86_64.dmg`
 
 ### Developer ID Signing (Optional)
 
@@ -107,9 +112,9 @@ For distribution without Gatekeeper warnings:
 
 # Create and notarize DMG
 ./package_dmg.sh
-xcrun notarytool submit "dist/BlackFrameDetector-1.0.0-arm64.dmg" \
+xcrun notarytool submit "dist/BlackFrameDetector-3.0.0-arm64.dmg" \
     --keychain-profile "notary" --wait
-xcrun stapler staple "dist/BlackFrameDetector-1.0.0-arm64.dmg"
+xcrun stapler staple "dist/BlackFrameDetector-3.0.0-arm64.dmg"
 ```
 
 ## Project Structure
@@ -125,6 +130,7 @@ BlackFrameDetector/
 ├── package_dmg-intel.sh            # Intel DMG creation
 ├── requirements.txt                # Python dependencies
 ├── logo.png                        # Application logo
+├── logo2.png                       # Banner background image
 ├── LICENSES.txt                    # Third-party licenses
 ├── CLAUDE.md                       # Claude Code context
 ├── README.md                       # This file
