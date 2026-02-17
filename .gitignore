@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+.venv-intel/
+
+# PyInstaller build artifacts
+build/
+dist/
+
+# Vendored binaries (large, platform-specific)
+vendor/bin/
+vendor/bin-intel/
+
+# macOS
+.DS_Store
+*.dmg
+
+# IDE
+.vscode/
+.idea/

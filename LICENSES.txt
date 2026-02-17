@@ -1,0 +1,85 @@
+================================================================================
+                        BLACK FRAME DETECTOR - LICENSES
+================================================================================
+
+This application bundles the following third-party software:
+
+
+================================================================================
+FFmpeg
+================================================================================
+
+FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.
+
+This application includes FFmpeg binaries which are licensed under the
+GNU General Public License (GPL) version 2 or later.
+
+FFmpeg License Notice:
+----------------------
+FFmpeg is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+FFmpeg is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+FFmpeg; if not, write to the Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+FFmpeg source code is available at: https://ffmpeg.org/
+
+For the static FFmpeg builds included in this application:
+- Source: https://www.osxexperts.net/ or https://ffmpeg.martin-riedl.de/
+- These are GPL-licensed builds with common codecs enabled
+
+
+================================================================================
+Qt / PySide6
+================================================================================
+
+This application uses PySide6, the official Python bindings for Qt.
+
+PySide6 is licensed under the GNU Lesser General Public License (LGPL)
+version 3.
+
+Qt is a trademark of The Qt Company Ltd.
+
+For more information: https://www.qt.io/licensing/
+
+
+================================================================================
+Python
+================================================================================
+
+Python is licensed under the Python Software Foundation License.
+
+Python is a trademark of the Python Software Foundation.
+
+For more information: https://docs.python.org/3/license.html
+
+
+================================================================================
+PyInstaller
+================================================================================
+
+PyInstaller is licensed under the GPL with a special exception which allows
+to use PyInstaller to build and distribute non-free programs.
+
+For more information: https://pyinstaller.org/
+
+
+================================================================================
+Application License
+================================================================================
+
+Black Frame Detector
+Copyright (c) 2025
+
+This application source code (excluding bundled third-party components) is
+provided for personal and commercial use. The bundled FFmpeg binaries are
+subject to the GPL license terms described above.
+
+================================================================================
