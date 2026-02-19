@@ -1,0 +1,4 @@
+file,start_frame,end_frame,start_timestamp,end_timestamp,length_frames,avg_pblack,min_pblack
+test_video.mov,810,821,00:00:33.750,00:00:34.208,12,100.000000,100.000000
+test_video.mov,1118,1119,00:00:46.583,00:00:46.625,2,100.000000,100.000000
+test_video.mov,1612,1612,00:01:07.167,00:01:07.167,1,100.000000,100.000000

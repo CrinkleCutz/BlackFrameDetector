@@ -1,0 +1,29 @@
+# Project Rules for Claude Code
+
+## Critical: Always Check NOTES First
+Before starting ANY task, you MUST:
+1. `cat NOTES/errors.md` - Review active issues
+2. `cat NOTES/fixes.md` - Check recent solutions
+3. `cat NOTES/decisions.md` - Understand context
+
+## Error Handling Protocol
+When an error occurs:
+1. Append to NOTES/errors.md immediately:
+   - Date, component, exact error message
+   - Status: Open
+2. Document the fix in NOTES/fixes.md once resolved
+3. Update status in errors.md to Fixed
+
+## Decision Logging
+For architectural choices, log in NOTES/decisions.md:
+- What was decided
+- Why (rationale)
+- What else was considered
+- Trade-offs accepted
+
+## File Structure
+NOTES/
+├── errors.md          # Active and resolved issues
+├── fixes.md           # Solutions and workarounds
+├── decisions.md       # Technical decisions
+└── YYYY-MM-DD_*.md    # Detailed issue tracking (optional)
