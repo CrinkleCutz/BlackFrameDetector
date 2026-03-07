@@ -16,15 +16,23 @@ A macOS application for detecting black or near-black frames in video files.
 - Export results to CSV or JSON with per-file identification
 - Faster than real-time analysis on most content
 
+## Download
+
+Two versions are available on the [Releases](../../releases) page:
+
+| Version | File | Mac Type |
+|---------|------|----------|
+| **Apple Silicon** | `BlackFrameDetector-3.0.0-arm64.dmg` | M1, M2, M3, M4 |
+| **Intel** | `BlackFrameDetector-3.0.0-x86_64.dmg` | Any Intel-based Mac |
+
+**Not sure which Mac you have?** Click the Apple menu () → "About This Mac". If the chip says "Apple M1/M2/M3/M4", download the ARM64 version. If it says "Intel", download the x86_64 version.
+
 ## Installation
 
-### From GitHub Releases (Recommended)
-
-1. Go to the [Releases](../../releases) page
-2. Download the `.dmg` file for your architecture (ARM64 for Apple Silicon, x86_64 for Intel)
-3. Double-click the DMG to mount it
-4. Drag "Black Frame Detector" to Applications
-5. **First launch**: Right-click the app → "Open" → Click "Open" in the dialog
+1. Download the correct `.dmg` from [Releases](../../releases)
+2. Double-click the DMG to mount it
+3. Drag "Black Frame Detector" to Applications
+4. **First launch**: Right-click the app → "Open" → Click "Open" in the dialog
 
 After the first launch, the app will open normally.
 
@@ -32,9 +40,8 @@ After the first launch, the app will open normally.
 
 ### Requirements
 
-- macOS 10.15 (Catalina) or later for Intel Macs
 - macOS 11.0 (Big Sur) or later for Apple Silicon Macs
-- Apple Silicon (M1/M2/M3/M4) or Intel processor
+- macOS 10.15 (Catalina) or later for Intel Macs
 
 ## Usage
 
